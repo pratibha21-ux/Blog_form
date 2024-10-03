@@ -1,0 +1,110 @@
+.blogForm {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input,
+.textarea,
+.select,
+.fileInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.2s;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+    border-color: #2e2f30;
+    outline: none;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.fileInput {
+    padding: 3px;
+}
+
+.submitButton {
+    padding: 10px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 560px;
+    transition: background-color 0.2s;
+}
+
+.submitButton:hover {
+    background-color: #3b3d3f;
+}
+
+@media (max-width: 768px) {
+    .blogForm {
+        padding: 15px;
+        position: fixed;
+    }
+    .input,
+    .textarea,
+    .select,
+    .fileInput {
+        padding: 8px;
+    }
+    .submitButton {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 414px) {
+    .blogForm {
+        /* padding: 15px; */
+        position: fixed;
+    }
+    .input,
+    .textarea,
+    .select,
+    .fileInput {
+        padding: 8px;
+    }
+    .submitButton {
+        width: 380px;
+    }
+}
+
+@media (max-width: 360px) {
+    .blogForm {
+        position: center;
+    }
+    .input,
+    .textarea,
+    .select,
+    .fileInput {
+        padding: 6px;
+    }
+    .submitButton {
+        width: 330px;
+    }
+}
